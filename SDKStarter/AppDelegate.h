@@ -8,16 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import <SENTTransportDetectionSDK/SENTTransportDetectionSDK.h>
-
 
 // The appdelegate confirms to SENTTransportDetectionSDKDelegate protocol
-@interface AppDelegate : UIResponder <UIApplicationDelegate, SENTTransportDetectionSDKDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-// Keep a strong reference to a single instance of the SDK
-@property (strong, atomic) SENTTransportDetectionSDK *sentianceSdk;
 
 @end
 
