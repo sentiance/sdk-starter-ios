@@ -9,8 +9,6 @@
 #import "ViewController.h"
 
 #import <SENTTransportDetectionSDK/SENTTransportDetectionSDK.h>
-#import <SENTTransportDetectionSDK/SENTStatusMessage.h>
-#import "AppDelegate.h"
 
 
 @interface ViewController ()
@@ -24,10 +22,13 @@
 }
 
 - (void) refreshStatus {
-    self.userIdLabel.text = [SENTTransportDetectionSDK getUserId];
-    
-    // You can use the status message for more information
-    SENTStatusMessage* status = [((AppDelegate *)[[UIApplication sharedApplication] delegate]).sentianceSdk getStatusMessage];
+    // Make sure the SDK is initialized or an exception will be thrown.
+    if ([[SENTSDK sharedInstance] isInitialised]) {
+        self.userIdLabel.text = [[SENTSDK sharedInstance] getUserId];
+
+        // You can use the status message for more information
+        SENTSDKStatus* status = [[SENTSDK sharedInstance] getSdkStatus];
+    }
 }
 
 

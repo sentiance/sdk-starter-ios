@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45620ADA1CE3289B0041DEB9 /* SENTTransportDetectionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620AD91CE3289B0041DEB9 /* SENTTransportDetectionSDK.framework */; };
 		45620ADC1CE328AC0041DEB9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620ADB1CE328AC0041DEB9 /* libz.tbd */; };
 		45620ADE1CE328B30041DEB9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620ADD1CE328B30041DEB9 /* CoreMotion.framework */; };
 		45620AE01CE328B80041DEB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620ADF1CE328B80041DEB9 /* CoreLocation.framework */; };
@@ -19,10 +18,12 @@
 		45E0F9911CE325B4000F74B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E0F98F1CE325B4000F74B6 /* Main.storyboard */; };
 		45E0F9931CE325B4000F74B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E0F9921CE325B4000F74B6 /* Assets.xcassets */; };
 		45E0F9961CE325B4000F74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E0F9941CE325B4000F74B6 /* LaunchScreen.storyboard */; };
+		ECD0A03C1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0A03B1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework */; };
+		ECD0A03F1E9CD0D900ECD4BC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0A03E1E9CD0D900ECD4BC /* CoreTelephony.framework */; };
+		ECD0A0411E9CD0E300ECD4BC /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0A0401E9CD0E300ECD4BC /* CallKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		45620AD91CE3289B0041DEB9 /* SENTTransportDetectionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SENTTransportDetectionSDK.framework; sourceTree = "<group>"; };
 		45620ADB1CE328AC0041DEB9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		45620ADD1CE328B30041DEB9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		45620ADF1CE328B80041DEB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -38,6 +39,9 @@
 		45E0F9921CE325B4000F74B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E0F9951CE325B4000F74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E0F9971CE325B4000F74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD0A03B1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SENTTransportDetectionSDK.framework; path = SDKStarter/SENTTransportDetectionSDK.framework; sourceTree = "<group>"; };
+		ECD0A03E1E9CD0D900ECD4BC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		ECD0A0401E9CD0E300ECD4BC /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +49,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD0A0411E9CD0E300ECD4BC /* CallKit.framework in Frameworks */,
+				ECD0A03F1E9CD0D900ECD4BC /* CoreTelephony.framework in Frameworks */,
 				45620AE41CE328C80041DEB9 /* Foundation.framework in Frameworks */,
 				45620AE01CE328B80041DEB9 /* CoreLocation.framework in Frameworks */,
 				45620AE21CE328BD0041DEB9 /* SystemConfiguration.framework in Frameworks */,
 				45620ADE1CE328B30041DEB9 /* CoreMotion.framework in Frameworks */,
 				45620ADC1CE328AC0041DEB9 /* libz.tbd in Frameworks */,
-				45620ADA1CE3289B0041DEB9 /* SENTTransportDetectionSDK.framework in Frameworks */,
+				ECD0A03C1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,9 +71,10 @@
 				45620ADF1CE328B80041DEB9 /* CoreLocation.framework */,
 				45620ADD1CE328B30041DEB9 /* CoreMotion.framework */,
 				45620ADB1CE328AC0041DEB9 /* libz.tbd */,
-				45620AD91CE3289B0041DEB9 /* SENTTransportDetectionSDK.framework */,
+				ECD0A03B1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework */,
 				45E0F9851CE325B4000F74B6 /* SDKStarter */,
 				45E0F9841CE325B3000F74B6 /* Products */,
+				ECD0A03D1E9CD0D900ECD4BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +108,15 @@
 				45E0F9871CE325B4000F74B6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECD0A03D1E9CD0D900ECD4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECD0A0401E9CD0E300ECD4BC /* CallKit.framework */,
+				ECD0A03E1E9CD0D900ECD4BC /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +308,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SDKStarter",
 				);
 				INFOPLIST_FILE = SDKStarter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -312,9 +330,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SDKStarter",
 				);
 				INFOPLIST_FILE = SDKStarter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

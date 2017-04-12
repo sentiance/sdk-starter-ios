@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
-#import <SENTTransportDetectionSDK/SENTStatusMessage.h>
+#import <SENTTransportDetectionSDK/SENTTransportDetectionSDK.h>
 
 @interface AppDelegate ()
 
@@ -28,33 +27,34 @@
 
 - (void) initializeSentianceSdk:(NSDictionary*) launchOptions {
     // SDK configuration
-    NSDictionary* config = @{
-                             @"appid": @"YOUR_APP_ID",
-                             @"secret": @"YOUR_APP_SECRET",
-                             @"appLaunchOptions": launchOptions == nil ? @{} : launchOptions
-                             };
-    
+    SENTConfig *conf = [[SENTConfig alloc] initWithAppId:@"APPID" secret:@"SECRET" launchOptions:launchOptions];
+
     // Initialize and start the Sentiance SDK module
     // The first time an app installs on a device, the SDK requires internet to create a Sentiance platform userid
-    self.sentianceSdk = [[SENTTransportDetectionSDK alloc] initWithConfigurationData:config];
-    
-    // Register this instance as SENTTransportDetectionSDKDelegate
-    self.sentianceSdk.delegate = self;
+    [[SENTSDK sharedInstance] initWithConfig:conf success:^{
+        // At this point the OS will ask the user to approve the permissions
+        [self didAuthenticationSuccess];
+        [self startSentianceSdk];
+    } failure:^(SENTInitIssue issue) {
+        NSLog(@"Issue: %lu", issue);
+    }];
 }
-
-
 
 // Called when the SDK was able to create a platform user
 - (void) didAuthenticationSuccess {
     NSLog(@"==== Sentiance SDK started, version: %@",
-        [SENTTransportDetectionSDK getSDKVersion]);
+        [[SENTSDK sharedInstance] getVersion]);
     
     NSLog(@"==== Sentiance platform user id for this install: %@",
-          [SENTTransportDetectionSDK getUserId]);
-    
-    NSLog(@"==== Authorization token that can be used to query the HTTP API: Bearer %@",
-          [SENTTransportDetectionSDK getUserToken]);
-    
+          [[SENTSDK sharedInstance] getUserId]);
+
+    [[SENTSDK sharedInstance] getUserAccessToken:^(SENTToken *token) {
+        NSLog(@"==== Authorization token that can be used to query the HTTP API: Bearer %@",
+              [token tokenId]);
+    } failure:^{
+        NSLog(@"Could not retrieve token");
+    }];
+
     
     // Notify view controller of successful authentication
     [[NSNotificationCenter defaultCenter]
@@ -62,22 +62,16 @@
      object:nil];
 }
 
-
-
-// Called when the SDK could not create a platform user
-- (void) didAuthenticationFailed:(NSError *)error {
-    NSLog(@"Error launching Sentiance SDK: %@", error);
-    // Here you should wait, inform the user to ensure an internet connection and retry initializeSentianceSdk
-    
-    
-    
-    // Some SDK starter specific help
-    if( error.code == 400 ) {
-        NSLog(@"You should create a developer account on https://audience.sentiance.com/developers and afterwards register a Sentiance application on https://audience.sentiance.com/apps");
-        NSLog(@"This will give you an application ID and secret which you can use to replace YOUR_APP_ID and YOUR_APP_SECRET in AppDelegate.m");
-    }
+- (void) startSentianceSdk {
+    [[SENTSDK sharedInstance] start:^(SENTSDKStatus *status) {
+        if ([status startStatus] == SENTStartStatusStarted) {
+            NSLog(@"SDK started properly");
+        } else if ([status startStatus] == SENTStartStatusPending) {
+            NSLog(@"Something prevented the SDK to start properly. Once fixed, the SDK will start automatically");
+        }
+        else {
+            NSLog(@"SDK did not start");
+        }
+    }];
 }
-
-
-
 @end
