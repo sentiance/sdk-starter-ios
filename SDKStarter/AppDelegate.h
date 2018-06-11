@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 // The appdelegate confirms to SENTTransportDetectionSDKDelegate protocol
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
