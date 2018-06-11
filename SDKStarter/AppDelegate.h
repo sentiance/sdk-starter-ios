@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  SDKStarter
 //
-//  Created by Roel Berger on 11/05/16.
-//  Copyright © 2016 Sentiance. All rights reserved.
+//  Created by Gustavo Nascimento on 11/06/18.
+//  Copyright © 2018 Sentiance. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

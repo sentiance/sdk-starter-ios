@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>SDK Starter</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -30,6 +32,10 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>We require your location to accurately detect your context and build your profile</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We require your location to accurately detect your context and build your profile</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We require your location to accurately detect your context and build your profile</string>
+	<key>NSLocationUsageDescription</key>
 	<string>We require your location to accurately detect your context and build your profile</string>
 	<key>NSMotionUsageDescription</key>
 	<string>We require your motion usage to accurately detect your context and build your profile</string>
