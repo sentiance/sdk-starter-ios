@@ -2,14 +2,13 @@
 //  ViewController.m
 //  SDKStarter
 //
-//  Created by Roel Berger on 11/05/16.
-//  Copyright © 2016 Sentiance. All rights reserved.
+//  Created by Gustavo Nascimento on 11/06/18.
+//  Copyright © 2018 Sentiance. All rights reserved.
 //
 
 #import "ViewController.h"
 
-#import <SENTTransportDetectionSDK/SENTTransportDetectionSDK.h>
-
+@import SENTSDK;
 
 @interface ViewController ()
 
@@ -22,15 +21,13 @@
 }
 
 - (void) refreshStatus {
-    // Make sure the SDK is initialized or an exception will be thrown.
-    if ([[SENTSDK sharedInstance] isInitialised]) {
-        self.userIdLabel.text = [[SENTSDK sharedInstance] getUserId];
-
-        // You can use the status message for more information
-        SENTSDKStatus* status = [[SENTSDK sharedInstance] getSdkStatus];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        // Make sure the SDK is initialized or an exception will be thrown.
+        if ([[SENTSDK sharedInstance] isInitialised]) {
+            self.userIdLabel.text = [[SENTSDK sharedInstance] getUserId];
+        }
+    });
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,8 +36,6 @@
                                              selector:@selector(refreshStatus)
                                                  name:@"SdkAuthenticationSuccess"
                                                object:nil];
-    
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {

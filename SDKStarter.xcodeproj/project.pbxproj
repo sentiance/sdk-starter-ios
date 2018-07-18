@@ -7,28 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45620ADC1CE328AC0041DEB9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620ADB1CE328AC0041DEB9 /* libz.tbd */; };
-		45620ADE1CE328B30041DEB9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620ADD1CE328B30041DEB9 /* CoreMotion.framework */; };
-		45620AE01CE328B80041DEB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620ADF1CE328B80041DEB9 /* CoreLocation.framework */; };
-		45620AE21CE328BD0041DEB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620AE11CE328BD0041DEB9 /* SystemConfiguration.framework */; };
-		45620AE41CE328C80041DEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45620AE31CE328C80041DEB9 /* Foundation.framework */; };
 		45E0F9881CE325B4000F74B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E0F9871CE325B4000F74B6 /* main.m */; };
 		45E0F98B1CE325B4000F74B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E0F98A1CE325B4000F74B6 /* AppDelegate.m */; };
 		45E0F98E1CE325B4000F74B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E0F98D1CE325B4000F74B6 /* ViewController.m */; };
 		45E0F9911CE325B4000F74B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E0F98F1CE325B4000F74B6 /* Main.storyboard */; };
 		45E0F9931CE325B4000F74B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E0F9921CE325B4000F74B6 /* Assets.xcassets */; };
 		45E0F9961CE325B4000F74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E0F9941CE325B4000F74B6 /* LaunchScreen.storyboard */; };
-		ECD0A03C1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0A03B1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework */; };
+		ECB0825520CE8F7A00E33A56 /* SENTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB0825420CE8F7A00E33A56 /* SENTSDK.framework */; };
+		ECB0825720CE8F8100E33A56 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB0825620CE8F8100E33A56 /* libz.tbd */; };
+		ECB0825920CE8F9C00E33A56 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB0825820CE8F9C00E33A56 /* CoreMotion.framework */; };
+		ECB0825B20CE8FA300E33A56 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB0825A20CE8FA300E33A56 /* SystemConfiguration.framework */; };
+		ECB0825D20CE8FA800E33A56 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB0825C20CE8FA800E33A56 /* CoreLocation.framework */; };
+		ECB0825F20CE8FAD00E33A56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB0825E20CE8FAD00E33A56 /* Foundation.framework */; };
+		ECB0826120CE90C500E33A56 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB0826020CE90C500E33A56 /* CoreData.framework */; };
+		ECB0826320CE90D600E33A56 /* SENTSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECB0826220CE90D600E33A56 /* SENTSDK.bundle */; };
 		ECD0A03F1E9CD0D900ECD4BC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0A03E1E9CD0D900ECD4BC /* CoreTelephony.framework */; };
 		ECD0A0411E9CD0E300ECD4BC /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0A0401E9CD0E300ECD4BC /* CallKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		45620ADB1CE328AC0041DEB9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		45620ADD1CE328B30041DEB9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		45620ADF1CE328B80041DEB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		45620AE11CE328BD0041DEB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		45620AE31CE328C80041DEB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45E0F9831CE325B3000F74B6 /* SDKStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E0F9871CE325B4000F74B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45E0F9891CE325B4000F74B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,7 +36,14 @@
 		45E0F9921CE325B4000F74B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E0F9951CE325B4000F74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E0F9971CE325B4000F74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECD0A03B1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SENTTransportDetectionSDK.framework; path = SDKStarter/SENTTransportDetectionSDK.framework; sourceTree = "<group>"; };
+		ECB0825420CE8F7A00E33A56 /* SENTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SENTSDK.framework; sourceTree = "<group>"; };
+		ECB0825620CE8F8100E33A56 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		ECB0825820CE8F9C00E33A56 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		ECB0825A20CE8FA300E33A56 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ECB0825C20CE8FA800E33A56 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ECB0825E20CE8FAD00E33A56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECB0826020CE90C500E33A56 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ECB0826220CE90D600E33A56 /* SENTSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SENTSDK.bundle; path = SENTSDK.framework/Versions/A/Resources/SENTSDK.bundle; sourceTree = "<group>"; };
 		ECD0A03E1E9CD0D900ECD4BC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		ECD0A0401E9CD0E300ECD4BC /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -49,14 +53,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD0A0411E9CD0E300ECD4BC /* CallKit.framework in Frameworks */,
+				ECB0826120CE90C500E33A56 /* CoreData.framework in Frameworks */,
 				ECD0A03F1E9CD0D900ECD4BC /* CoreTelephony.framework in Frameworks */,
-				45620AE41CE328C80041DEB9 /* Foundation.framework in Frameworks */,
-				45620AE01CE328B80041DEB9 /* CoreLocation.framework in Frameworks */,
-				45620AE21CE328BD0041DEB9 /* SystemConfiguration.framework in Frameworks */,
-				45620ADE1CE328B30041DEB9 /* CoreMotion.framework in Frameworks */,
-				45620ADC1CE328AC0041DEB9 /* libz.tbd in Frameworks */,
-				ECD0A03C1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework in Frameworks */,
+				ECD0A0411E9CD0E300ECD4BC /* CallKit.framework in Frameworks */,
+				ECB0825F20CE8FAD00E33A56 /* Foundation.framework in Frameworks */,
+				ECB0825D20CE8FA800E33A56 /* CoreLocation.framework in Frameworks */,
+				ECB0825B20CE8FA300E33A56 /* SystemConfiguration.framework in Frameworks */,
+				ECB0825920CE8F9C00E33A56 /* CoreMotion.framework in Frameworks */,
+				ECB0825720CE8F8100E33A56 /* libz.tbd in Frameworks */,
+				ECB0825520CE8F7A00E33A56 /* SENTSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +71,8 @@
 		45E0F97A1CE325B3000F74B6 = {
 			isa = PBXGroup;
 			children = (
-				45620AE31CE328C80041DEB9 /* Foundation.framework */,
-				45620AE11CE328BD0041DEB9 /* SystemConfiguration.framework */,
-				45620ADF1CE328B80041DEB9 /* CoreLocation.framework */,
-				45620ADD1CE328B30041DEB9 /* CoreMotion.framework */,
-				45620ADB1CE328AC0041DEB9 /* libz.tbd */,
-				ECD0A03B1E9CD0D000ECD4BC /* SENTTransportDetectionSDK.framework */,
+				ECB0826220CE90D600E33A56 /* SENTSDK.bundle */,
+				ECB0825420CE8F7A00E33A56 /* SENTSDK.framework */,
 				45E0F9851CE325B4000F74B6 /* SDKStarter */,
 				45E0F9841CE325B3000F74B6 /* Products */,
 				ECD0A03D1E9CD0D900ECD4BC /* Frameworks */,
@@ -113,6 +114,12 @@
 		ECD0A03D1E9CD0D900ECD4BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECB0826020CE90C500E33A56 /* CoreData.framework */,
+				ECB0825E20CE8FAD00E33A56 /* Foundation.framework */,
+				ECB0825C20CE8FA800E33A56 /* CoreLocation.framework */,
+				ECB0825A20CE8FA300E33A56 /* SystemConfiguration.framework */,
+				ECB0825820CE8F9C00E33A56 /* CoreMotion.framework */,
+				ECB0825620CE8F8100E33A56 /* libz.tbd */,
 				ECD0A0401E9CD0E300ECD4BC /* CallKit.framework */,
 				ECD0A03E1E9CD0D900ECD4BC /* CoreTelephony.framework */,
 			);
@@ -145,11 +152,12 @@
 		45E0F97B1CE325B3000F74B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Sentiance;
 				TargetAttributes = {
 					45E0F9821CE325B3000F74B6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 74U2U57M47;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -181,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB0826320CE90D600E33A56 /* SENTSDK.bundle in Resources */,
 				45E0F9961CE325B4000F74B6 /* LaunchScreen.storyboard in Resources */,
 				45E0F9931CE325B4000F74B6 /* Assets.xcassets in Resources */,
 				45E0F9911CE325B4000F74B6 /* Main.storyboard in Resources */,
@@ -231,13 +240,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -275,13 +294,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -308,20 +337,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 74U2U57M47;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/SDKStarter",
 				);
 				INFOPLIST_FILE = SDKStarter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-all_load",
+					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sentiance.SDKStarter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sentiance.sdkStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -330,20 +360,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 74U2U57M47;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/SDKStarter",
 				);
 				INFOPLIST_FILE = SDKStarter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-all_load",
+					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sentiance.SDKStarter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sentiance.sdkStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
