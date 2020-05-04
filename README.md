@@ -6,10 +6,10 @@ Steps applied: [Sentiance iOS SDK docs](https://docs.sentiance.com/sdk/getting-s
 ## To run this project:
 1. Request a developer account by [contacting Sentiance](mailto:support@sentiance.com).
 2. Grab your test app credentials from [here](https://insights.sentiance.com/#/apps).
-3. Download and extract the latest framwork file from the [sentiance ios sdk docs](https://docs.sentiance.com/sdk/getting-started/ios-sdk/include-sdk)
+3. Download and extract the latest framwork file from the [sentiance ios sdk docs](https://docs.sentiance.com/sdk/getting-started/ios-sdk/1.-installation/manual-installation)
 4. Place the extracted framework in the repository root path
 5. `open SDKStarter.xcodeproj`
-6. In `SDKStarter/AppDelegate.m`: replace `YOUR_APP_ID` and `YOUR_APP_SECRET` with the credentials from the application you added in step 2.
+6. In `SDKStarter/SentianceSDKService.m`: set `AppId` and `AppSecret` to the credentials from the application you added in step 2.
 7. Clean, build and run the application on your device
 
 ## More info
