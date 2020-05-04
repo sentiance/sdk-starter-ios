@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28AE96B82460AAB0006C0C5F /* SentianceSDKService.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AE96B72460AAB0006C0C5F /* SentianceSDKService.m */; };
 		45E0F9881CE325B4000F74B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E0F9871CE325B4000F74B6 /* main.m */; };
 		45E0F98B1CE325B4000F74B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E0F98A1CE325B4000F74B6 /* AppDelegate.m */; };
 		45E0F98E1CE325B4000F74B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E0F98D1CE325B4000F74B6 /* ViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28AE96B62460AAB0006C0C5F /* SentianceSDKService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SentianceSDKService.h; sourceTree = "<group>"; };
+		28AE96B72460AAB0006C0C5F /* SentianceSDKService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SentianceSDKService.m; sourceTree = "<group>"; };
 		45E0F9831CE325B3000F74B6 /* SDKStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E0F9871CE325B4000F74B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45E0F9891CE325B4000F74B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				ECB0826220CE90D600E33A56 /* SENTSDK.bundle */,
-				ECB0825420CE8F7A00E33A56 /* SENTSDK.framework */,
 				45E0F9851CE325B4000F74B6 /* SDKStarter */,
 				45E0F9841CE325B3000F74B6 /* Products */,
 				ECD0A03D1E9CD0D900ECD4BC /* Frameworks */,
@@ -94,6 +96,8 @@
 				45E0F98A1CE325B4000F74B6 /* AppDelegate.m */,
 				45E0F98C1CE325B4000F74B6 /* ViewController.h */,
 				45E0F98D1CE325B4000F74B6 /* ViewController.m */,
+				28AE96B62460AAB0006C0C5F /* SentianceSDKService.h */,
+				28AE96B72460AAB0006C0C5F /* SentianceSDKService.m */,
 				45E0F98F1CE325B4000F74B6 /* Main.storyboard */,
 				45E0F9921CE325B4000F74B6 /* Assets.xcassets */,
 				45E0F9941CE325B4000F74B6 /* LaunchScreen.storyboard */,
@@ -114,6 +118,7 @@
 		ECD0A03D1E9CD0D900ECD4BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECB0825420CE8F7A00E33A56 /* SENTSDK.framework */,
 				ECB0826020CE90C500E33A56 /* CoreData.framework */,
 				ECB0825E20CE8FAD00E33A56 /* Foundation.framework */,
 				ECB0825C20CE8FA800E33A56 /* CoreLocation.framework */,
@@ -171,6 +176,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E0F98E1CE325B4000F74B6 /* ViewController.m in Sources */,
+				28AE96B82460AAB0006C0C5F /* SentianceSDKService.m in Sources */,
 				45E0F98B1CE325B4000F74B6 /* AppDelegate.m in Sources */,
 				45E0F9881CE325B4000F74B6 /* main.m in Sources */,
 			);

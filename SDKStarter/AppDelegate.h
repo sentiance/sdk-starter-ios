@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SentianceSDKService.h"
 
-// The appdelegate confirms to SENTTransportDetectionSDKDelegate protocol
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) SentianceSDKService *sdkService;
 
 @end
 

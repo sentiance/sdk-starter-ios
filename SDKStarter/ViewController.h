@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *userIdLabel;
+@property (weak, nonatomic) IBOutlet UIButton *sdkActionButton;
 
 @end
 

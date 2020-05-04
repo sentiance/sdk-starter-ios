@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,28 +19,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sentiance SDK Starter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0c-yI-58O">
-                                <rect key="frame" x="102" y="40" width="171" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sentiance SDK Starter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0c-yI-58O">
+                                <rect key="frame" x="26" y="20" width="323" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.23921568630000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER_ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPA-xm-Vzq">
-                                <rect key="frame" x="159" y="69" width="56" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER_ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPA-xm-Vzq">
+                                <rect key="frame" x="26" y="49" width="323" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ6-Hm-PKY">
+                                <rect key="frame" x="26" y="617" width="323" height="30"/>
+                                <color key="tintColor" red="0.99739438300000005" green="0.1524720192" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Reset SDK"/>
+                                <connections>
+                                    <action selector="sdkAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mz-zF-Dp2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="A0c-yI-58O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="00a-Qz-9th"/>
-                            <constraint firstItem="A0c-yI-58O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ziz-qw-9ll"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A0c-yI-58O" secondAttribute="trailing" constant="10" id="1SP-je-NfP"/>
+                            <constraint firstItem="JQ6-Hm-PKY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1cZ-VX-lqX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JQ6-Hm-PKY" secondAttribute="bottom" constant="20" id="2U7-LQ-bji"/>
+                            <constraint firstItem="pPA-xm-Vzq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="5cZ-zz-8G0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pPA-xm-Vzq" secondAttribute="trailing" constant="10" id="7IG-AX-mzC"/>
+                            <constraint firstItem="A0c-yI-58O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Ljt-Nb-JWG"/>
                             <constraint firstItem="pPA-xm-Vzq" firstAttribute="top" secondItem="A0c-yI-58O" secondAttribute="bottom" constant="8" id="dnX-Uv-BVM"/>
-                            <constraint firstItem="pPA-xm-Vzq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zjl-zd-WE9"/>
+                            <constraint firstItem="JQ6-Hm-PKY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="fTw-JU-iRH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JQ6-Hm-PKY" secondAttribute="trailing" constant="10" id="ui6-o8-fPg"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="sdkActionButton" destination="JQ6-Hm-PKY" id="rqr-0P-SJ8"/>
                         <outlet property="userIdLabel" destination="pPA-xm-Vzq" id="5wF-Nx-81B"/>
                     </connections>
                 </viewController>
