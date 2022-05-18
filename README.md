@@ -1,4 +1,7 @@
-# Sentiance SDK Starter
+# DEPRECATED
+Refer to [sample-apps-ios](https://github.com/sentiance/sample-apps-ios).
+
+#
 A simple single-view application that uses the Sentiance SDK.
    
 Steps applied: [Sentiance iOS SDK docs](https://docs.sentiance.com/sdk/getting-started/ios-sdk)
